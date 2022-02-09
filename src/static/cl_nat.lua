@@ -34,6 +34,12 @@ exports.qtarget:AddBoxZone("Apartment", vector3(212.94, -591.6, 43.87), 4, 4, {
             icon = "fas fa-building",
             label = "Enter your apartment",
         },
+        {
+          event = "raidApartment",
+          icon = "fas fa-building",
+          label = "Raid an Apartment",
+          job = 'police'
+      },
         
     },
     distance = 3.5
@@ -56,6 +62,7 @@ exports.qtarget:AddBoxZone("Apartment", vector3(212.94, -591.6, 43.87), 4, 4, {
     },
     distance = 3.5
   })
+ 
 --   exports.qtarget:AddBoxZone("Storage", vector3(361.79, 273.06, 91.01), 1, 1, {
 
 --     name="storage",
@@ -112,4 +119,8 @@ end)
     SendNUIMessage({
       play = 'playSound',
     })
+  end)
+
+  AddEventHandler('raidApartment', function ()
+    showraidDisplay(true)
   end)

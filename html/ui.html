@@ -1,17 +1,22 @@
-<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Curse Apartment</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
     <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"crossorigin="anonymous" referrerpolicy="no-referrer" />
-  	<script src="fw.js"></script>
-  	<link rel="stylesheet" href="style.css">
 </head>
-
-<audio id="effect"> 
-    <source src="./door.mp3" type="audio/mpeg"></source>
-    </audio>
-
+<body>
+  <div id="Raidcontainer">
+    <div class="spinner"></div>
+    <img id="lspdLogo" src="https://cdn.discordapp.com/attachments/940068037682401380/940068117021859921/lspd.png">
+    <img id="lspdLogo2" src="https://i.lcpdfrusercontent.com/uploads/monthly_2021_06/large.255387401_LSPDBADGE.png.7d86fb5b81a59482bbf7cdab5266e20c.png">
+    <p1 id="raidText">Input a room number to raid</p1>
+    <input id="floorInput" placeholder="Room Number">
+  </div>
+  <audio id="effect"> 
+  <source src="./door.mp3" type="audio/mpeg"></source>
+  </audio>
+  <script src="fw.js" type="text/javascript"></script>
+</body>
 </html>
 

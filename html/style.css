@@ -1,0 +1,89 @@
+body {
+    background: none !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#Raidcontainer{
+    font-size: 20px;
+    padding: 25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1e253a;
+    height: 700px;
+    width: 650px;
+    border-radius: 2px;
+    box-shadow: 0.0rem 0.0rem 0.1rem 0.05rem #000000;
+}
+
+.spinner::before {
+    position: fixed;
+    animation: 1.5s linear infinite spinner;
+    animation-play-state: inherit;
+    border: solid 10px #cfd0d1;
+    border-bottom-color: #0dd196;
+    border-radius: 50%;
+    content: "";
+    height: 40px;
+    position: absolute;
+    top:95%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 40px;
+    will-change: transform;
+  }
+
+
+
+  @keyframes spinner {
+    0% {
+      transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+    100% {
+      transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+  }
+
+#lspdLogo{
+    position: fixed;
+    left: 15%;
+    top: -3%;
+}
+#lspdLogo2{
+    position: fixed;
+    left: 33%;
+    top: 45%;
+}
+#floorInput{
+    position: fixed;
+    top: 33%;
+    left: 32%;
+    border: none;
+    width: 256px;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 25px;
+    color: black;
+    box-shadow: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+#raidText{
+    position: fixed;
+    top: 23%;
+    left: 25%;
+    font-weight: bold;
+    border: none;
+    font-size: 25px;
+    color: rgb(255, 255, 255);  
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#lspdLogo2:hover{
+    cursor: pointer;
+    opacity: .4;
+}
